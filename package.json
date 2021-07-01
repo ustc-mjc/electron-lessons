@@ -1,0 +1,36 @@
+{
+  "name": "file-io",
+  "version": "1.0.0",
+  "main": "app/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ustc-mjc/electron-lessons.git"
+  },
+  "author": {
+    "name": "ustc-mjc",
+    "email": "mojucheng@bytedance.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ustc-mjc/electron-lessons/issues"
+  },
+  "homepage": "https://github.com/ustc-mjc/electron-lessons#readme",
+  "scripts": {
+    "start": "electron .",
+    "build-icon": "electron-icon-builder --input=./public/icon.png --output=build-res --flatten",
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "electron-builder -mwl",
+    "publish": "electron-builder -mwl --publish always"
+  },
+  "devDependencies": {
+    "electron": "^13.1.4",
+    "electron-builder": "^22.11.7",
+    "electron-icon-builder": "^2.0.1"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.2",
+    "drag-drop": "^7.0.1",
+    "fs-extra": "^10.0.0",
+    "open": "^8.2.1"
+  }
+}
